@@ -16,6 +16,7 @@ const App = () => {
 
   const dragEnded = (param) => {
     const { source, destination } = param;
+    if (source == null || destination == null) return;
     let _arr = [...comments];
     //extracting the source item from the list
     const _item = _arr.splice(source.index, 1)[0];
