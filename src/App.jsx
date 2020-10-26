@@ -28,7 +28,7 @@ const App = () => {
     <div className="container py-5">
       <h1>Comments</h1>
       <p>Drag to rearrange comments &lt;3</p>
-      <div className="col-sm-12 col-md-5">
+      <div className="col-sm-12 col-md-8 col-lg-6">
         {/* rendering comments */}
         <DragDropContext onDragEnd={dragEnded}>
           <Droppable droppableId="comments-wrapper">
